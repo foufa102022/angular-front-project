@@ -13,6 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { LoginComponent } from './login/login.component';
+import { SignComponent } from './sign/sign.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LoginComponent } from './login/login.component';
     ContactComponent,
     HomeComponent,
     AdminComponent,
-    LoginComponent
+    LoginComponent,
+    SignComponent
   ],
   imports: [
     BrowserModule,

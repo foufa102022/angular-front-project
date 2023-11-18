@@ -4,7 +4,13 @@ body {
     font-family: "Open Sans", sans-serif;
   }
 
- 
+  .divider:after,
+  .divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+  }
 
   a {
     color: #1bb1dc;
@@ -383,8 +389,13 @@ body {
     display: block;
   }
   
-  /*--------------------------------------------------------------
-  # Hero Section
+   /*--------------------------------------------------------------
+ # form Section
+  --------------------------------------------------------------*/
+ 
+  
+    /*--------------------------------------------------------------
+ # Hero Section
   --------------------------------------------------------------*/
   #hero {
     width: 100%;
@@ -712,6 +723,7 @@ body {
   
   @media (min-width: 991px) {
     #call-to-action .cta-btn-container {
+      
       display: flex;
       align-items: center;
       justify-content: flex-end;

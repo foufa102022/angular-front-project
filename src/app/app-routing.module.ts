@@ -8,16 +8,19 @@ import { WorkComponent } from './work/work.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
+import { SignComponent } from './sign/sign.component';
 
 const routes: Routes = [
-  { path:'',component:HomeComponent},
+  
+  { path:'home',component:HomeComponent},
   { path:'ajout',component:AjoutComponent},
   { path:'about',component:AboutComponent},
   { path:'contact',component:ContactComponent},
   { path:'finance',component:FinanceComponent},
   { path:'work',component:WorkComponent},
   { path:'login',component:LoginComponent},
-  { path:'admin',component:AdminComponent}
+  { path:'admin',component:AdminComponent},
+  { path:'sign',component:SignComponent}
   
   
 
