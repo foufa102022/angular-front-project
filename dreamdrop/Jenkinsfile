@@ -21,7 +21,8 @@ pipeline {
             steps {
                 script {
                     dir('dreamdrop/crowdapp') {
-                        bat './mvnw clean install'
+                         bat '.\\mvnw clean install'
+                        // bat './mvnw clean install'
                     }
                 }
             }
