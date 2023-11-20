@@ -13,7 +13,7 @@ services:
   backend:
     image: chetouiiftikhar/spring-img:${BUILD_ID}
     ports:
-      - "8877:8080"
+      - "8008:8080"
     depends_on:
       - postgres
     environment:
