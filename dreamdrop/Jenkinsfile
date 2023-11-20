@@ -57,7 +57,7 @@ pipeline {
             steps {
                 script {
                       dir('dreamdrop'){
-                      // bat "docker-compose down"
+                      bat "docker-compose down"
                       bat "docker-compose up -d"
                 }}
             }
