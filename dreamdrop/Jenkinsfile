@@ -40,16 +40,24 @@ pipeline {
                         // Tag Docker image
                         bat "docker tag spring-img:latest chetouiiftikhar/spring-img:%BUILD_ID%"
                         // Push Docker image to Docker Hub
-                        bat "docker push chetouiiftikhar/spring-img:%BUILD_ID%"
+                        // bat "docker push chetouiiftikhar/spring-img:%BUILD_ID%"
                     }
                 }
             }
         }
 
-        stage('Run Docker Container') {
+        // stage('Run Docker Container') {
+        //     steps {
+        //         script {
+        //             bat "docker run -d -p 8877:8080 --name backend_cont_${BUILD_ID}-sprint3 chetouiiftikhar/spring-img:${BUILD_ID}"
+        //         }
+        //     }
+        // }
+         stage('Run Docker Container') {
             steps {
                 script {
-                    bat "docker run -d -p 8877:8080 --name backend_cont_${BUILD_ID}-sprint3 chetouiiftikhar/spring-img:${BUILD_ID}"
+                      bat "docker-compose down"
+                      bat "docker-compose up -d"
                 }
             }
         }
