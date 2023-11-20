@@ -20,7 +20,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    dir('Backend/crowdapp') {
+                    dir('dreamdrop/crowdapp') {
                         bat './mvnw clean install'
                     }
                 }
