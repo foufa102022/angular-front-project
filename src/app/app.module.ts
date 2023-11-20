@@ -15,6 +15,7 @@ import { AdminComponent } from './admin/admin.component';
 import { LoginComponent } from './login/login.component';
 import { SignComponent } from './sign/sign.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +34,7 @@ import { SignComponent } from './sign/sign.component';
   imports: [
     BrowserModule,
     AppRoutingModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
