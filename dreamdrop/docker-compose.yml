@@ -21,7 +21,7 @@ services:
     networks:
       - net-projet
     ports:
-      - "8877:8080"
+      - "8077:8080"
     depends_on:
       - postgres
     environment:
