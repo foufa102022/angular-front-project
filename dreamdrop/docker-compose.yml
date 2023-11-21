@@ -25,7 +25,7 @@ services:
     depends_on:
       - postgres
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:2424/mydatabase
+      SPRING_DATASOURCE_URL: jdbc:postgresql://DB-container:2424/mydatabase
       SPRING_DATASOURCE_USERNAME: myuser
       SPRING_DATASOURCE_PASSWORD: mypassword
 
