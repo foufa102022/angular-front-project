@@ -12,7 +12,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: admin
     ports:
-      - "5432:2424"
+      - "5432:5432"
 
   backend:
     image: chetouiiftikhar/spring-img:${BUILD_ID}
@@ -21,7 +21,7 @@ services:
     networks:
       - net-projet
     ports:
-      - "8077:8080"
+      - "2424:2424"
     depends_on:
       - postgres
     environment:
