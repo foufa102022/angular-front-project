@@ -9,8 +9,8 @@ services:
       - net-projet
     environment:
       POSTGRES_DB: mydatabase
-      POSTGRES_USER: myuser
-      POSTGRES_PASSWORD: mypassword
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
     ports:
       - "2424:2424"
 
