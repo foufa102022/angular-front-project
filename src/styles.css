@@ -406,7 +406,8 @@ body {
     position: relative;
     background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
     background-size: cover;
-    padding-top: 110px;
+    padding-top: 10px;
+
   }
   
   @media (max-width: 991px) {
@@ -512,7 +513,8 @@ body {
   /* Section with background
   --------------------------------*/
   .section-bg {
-    background: #9caecc;
+    background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
+    background-size: cover;
   }
   
   /* About Us Section
