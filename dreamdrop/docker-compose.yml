@@ -5,8 +5,8 @@ services:
     image: postgres:15
     container_name: DB-container
     restart: always
-    #networks: 
-      #- net-projet
+    networks: 
+      - net-projet
     environment:
       POSTGRES_DB: postgres
       POSTGRES_USER: postgres
@@ -18,8 +18,8 @@ services:
     image: chetouiiftikhar/spring-img:${BUILD_ID}
     container_name: backend-container
     restart: always
-   # networks:
-     # - net-projet
+    networks:
+      - net-projet
     ports:
       - "2424:2424"
     depends_on:
@@ -30,5 +30,5 @@ services:
       SPRING_DATASOURCE_USERNAME: postgres
       SPRING_DATASOURCE_PASSWORD: admin
 
-#networks:  
-#  net-projet:
+networks:  
+  net-projet:
